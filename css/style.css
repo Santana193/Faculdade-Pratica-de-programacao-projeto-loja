@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    border: 5px dashed red;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+
+}
+#carrinho{
+    color:#f58e07;
+    margin: 30px 0;
+    padding: 20px;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
