@@ -10,7 +10,7 @@
   
 <link rel="stylesheet" href="css/style.css">
 
-
+<script src = "js/funcoes.js"></script>
 
 </head>
 <body>
@@ -39,13 +39,13 @@
                     <div><span class="produto-item">Cor:</span> branco</div>
 
                 </td>
-                <td>5000</td>
+                <td id="valor_1">R$ 5.000</td>
                 <td>
-                    <span class="badge text-bg-danger"><i class="bi bi-dash"></i></span>
-                    0
-                    <span class="badge text-bg-success"><i class="bi bi-plus"></i></span>
+                    <span class="badge text-bg-danger" onclick="alterarQtd (1, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_1">0</span>
+                    <span class="badge text-bg-success" onclick="alterarQtd (1, '+')"><i class="bi bi-plus"></i></span>
                 </td>
-                <td>0</td>
+                <td id="total_1">0</td>
             </tr>
             <tr>
                 <td>
@@ -57,13 +57,13 @@
                     <div><span class="produto-item">Cor:</span> preto</div>
 
                 </td>
-                <td>7000</td>
+                <td id="valor_2">R$ 7.000</td>
                 <td>
-                    <span class="badge text-bg-danger"><i class="bi bi-dash"></i></span>
-                    0
-                    <span class="badge text-bg-success"><i class="bi bi-plus"></i></span>
+                    <span class="badge text-bg-danger"onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_2">0</span>
+                    <span class="badge text-bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></span>
                 </td>
-                <td>0</td>
+                <td id="total_2">0</td>
             </tr>
             <tr>
                 <td>
@@ -75,20 +75,20 @@
                     <div><span class="produto-item">Cor:</span> cinza</div>
 
                 </td>
-                <td>8000</td>
+                <td id="valor_3">R$ 8.000</td>
                 <td>
-                    <span class="badge text-bg-danger"><i class="bi bi-dash"></i></span>
-                    0
-                    <span class="badge text-bg-success"><i class="bi bi-plus"></i></span>
+                    <span class="badge text-bg-danger"onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_3">0</span>
+                    <span class="badge text-bg-success" onclick="alterarQtd(3, '+')"><i class="bi bi-plus"></i></span>
                 </td>
-                <td>0</td>
+                <td id="total_3">0</td>
             </tr>
           
 
         </tbody>
     </table>
     <footer class="text-center">
-        <span><i class="bi bi-cart"></i>Subtotal: R$ : 0</span>
+        <span><i class="bi bi-cart"></i>Subtotal: <span id="subtotal">R$: 0</span></span>
     </footer>
 </div>
 </body>
